@@ -1,12 +1,23 @@
 # DB (MariaDB) テスト用ツール
 
-Makefile で動かす
+## 使い方
 
-schema.sql を用意し、
+1. ```bash
+   git clone https://github.com/shoumoji/sqltester.git
+   ```
 
-```bash
-make run # DBコンテナに入る
-make stop # DBコンテナを消す
-```
+1. ```bash
+   cd sqltester
+   ```
 
-で使う。
+1. ```bash
+   touch schema.sql # スキーマを書く
+   ```
+
+1. ```bash
+   make run # DBコンテナに入る
+   ```
+
+1. ```bash
+   make stop # 終わったらDBコンテナを消す
+   ```

@@ -1,0 +1,14 @@
+tables:
+  - name: users
+    desc: User table
+    columns:
+      - name: id
+        type: integer
+        primary-key: true
+        auto-increment: true
+      - name: name
+        type: varchar(32)
+        not-null: true
+        unique: true
+    quantities: 100
+  

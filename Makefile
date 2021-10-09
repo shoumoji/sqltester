@@ -11,3 +11,5 @@ run:
 .PHONY: stop
 stop:
 	docker stop $(DB_NAME)
+
+.PHONY: generate
